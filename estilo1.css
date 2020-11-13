@@ -1,0 +1,259 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0; /*zerar as margens */
+   position: absolute;
+    background-color: #000000;
+    border: 0;
+    
+}
+
+#total{
+        width: 100%;
+        height: auto;
+        background-color: #000000;
+    
+
+}
+
+#topo{
+    position: fixed;
+    width: 100%; /*largura da página*/
+    float:left; /*posicionar/ fazer as divs flutuarem*/
+    margin-bottom: 0%; /*margem inferior da div*/
+    margin-right:0px;
+    margin-left: 0px;
+    background-color: #000080;
+    box-shadow: black 0em 0em 1em;
+    z-index: 1000;
+}
+#menu{
+    width:auto;
+    height:auto;
+    float: right;
+    font-family: 'Anton', sans-serif;
+    padding: 30px 50px 10px 10px;
+}
+
+#menu a{
+    text-decoration: none; /*tira o sublinhado*/
+    color:#FFf; /*cor da letra*/
+    display: inline-block; /*deixa o menu em linha*/
+    padding:10px 30px 10px 30px; /*define o espaçamento externo do elemento - top right bottom left*/
+    font-family:  'Anton', sans-serif;
+    font-size:15px; /*define o tamanho da fonte*/
+    float: right;
+    font-family: 'Lobster', cursive;
+    
+}
+
+#menu a:hover{
+    background-color:#000080;
+    color:#000000;
+    border-radius: 5px;
+    
+}
+#logo{
+    width:100px;
+    height:70px;
+    float:left;
+    padding: 10px 10px 10px 50px;	
+}
+
+
+/* .w3-content{
+  height: 20%;
+   
+} */
+#sobre{
+    margin-top: 2%;
+    background-color: #333;
+}
+#sobre h3{
+    color:#000000;
+    font-family:'Lobster', cursive;  
+    text-align: center;
+}
+
+#membros {
+    float: left;
+    width: 100%;
+    border-bottom: 20px solid #000080;
+    border-top: 20px solid #000080;
+    
+}
+#membros img{
+        
+      color: #000000;
+
+}
+#membros h1{
+    color: #000080;
+    background-color:#000000; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+}
+
+#p1 img, #p2 img, #p3 img, #p4 img, #p5 img{
+	margin-bottom: 8%;
+	margin-left: 3.5%;
+	margin-top:5%;
+	 
+}
+#p2, #p4{
+    width: 20%;
+	float: left;
+}
+#p3 , #p1{
+    width: 20%;
+	float: left;
+}
+#p5{
+	width: 20%;	
+    float: left;
+}
+
+#contato{
+    width: 100%;
+    height: 30%;
+    
+}
+#contato h1, #contato h3{
+    color: #000080;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    
+}
+
+#contato iframe{
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+
+}
+
+#rodape{
+    width: 100%;
+    height: 80px;
+    float: left;																																																					
+    background: #333;
+    
+    
+}
+#rodape h1{
+    color: #000080;
+    text-align-last: center;
+    font-family:  'Lobster', cursive;
+    
+}
+#rodape a{
+    text-decoration: none;
+}
+
+
+#img{
+    float:left;
+    margin-top: 2px; 
+    
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+      margin-top: 1%;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -20%;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: #000080;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: teal;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+      font-family:'Lobster', cursive ;
+      font-size: 20px;
+    text-align: center;
+    background-color: #000080;
+    padding: 2px 16px;
+    color: black;
+  }
+  
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    
+    float: left;
+    width: 25%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  

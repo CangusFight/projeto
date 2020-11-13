@@ -1,0 +1,216 @@
+
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous|Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="icon" type="imagem/png" href="img/escudo.png" width="75" height="75" />
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<title>Cangu's Fight</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale-1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+        <body>
+            
+			 <div id="total">
+	            
+			  <div id="topo" class="secao">
+                            <div id="logo">
+                                <a class="link" href="index.html" > 
+                                        <img src="img/topo.png" width="400%" height="90%">                               
+                                </a>
+                            </div>
+                            
+                            <div id="menu">
+                              <a class="link" href="Pagamento.html"> Pagamento</a>
+                                <a class="link" href="Login.html"> Login</a>
+                                <a class="link" href="sobre.html"> Sobre nós </a>  
+                                <a Class="link" href="Produtos.html">Produtos</a>                                 
+                                <a class="link" href="contato.html">Contato</a>                                                               
+                                <a Class="link" href="Lutas.html">Lutas</a>
+                                <a Class="link" href="#home">Home</a>                                                                                                                                    
+                                                                                                                                                                   
+                            </div>
+                        
+                    </div>
+               <div id="home">
+                   
+                    <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              
+                              <img src="img/boxen.jpg" style="width:100%">
+                                                            
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              
+                              <img src="img/karteLn.jpg" style="width:100%">
+                            
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              
+                              <img src="img/jiujL.jpg" style="width:100%">
+                             
+                            </div>
+                            <div class="mySlides fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="img/banLn.jpg" style="width:100%">
+                                   
+                                  </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span> 
+                              <span class="dot" onclick="currentSlide(4)"></span> 
+                            </div>
+                            
+                            <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+                    </div>
+                    <div id="L" class="link">
+           
+                        <div id="L1">                              
+                                <a class="link" href="karate.html"> 
+                                    <img src="img/KK.png" width="75" height="75">                                    
+                              <h1>Karatê</h1>                                                           
+                             </a>                    
+                             
+                                </div>                      
+                                <div id="L2">
+                                 
+                  <a class="link" href="muay.html"> 
+                        <img src="img/MT.png" width="75" height="75">
+                          <h1>Muay-Thai</h1> </a>
+                      
+                </div>                       
+                        <div id="L3">                              
+                                <a class="link" href="jiu jitsu.html ">  
+                                        <img src="img/JJ.png" width="75" height="75">
+                                     <h1>Jiu-Jitsu</h1> </a>                             
+                        </div>
+                        <div id="L4">                                
+                                <a class="link" href="boxe.html"> 
+                                        <img src="img/Bx.png" width="75" height="75">
+                                     <h1>Boxe</h1> </a>                                                              
+                        </div>
+                    </div>  
+                    <div id="profs">
+                   
+                        <div id="k">
+                          <h3>Pedro Motta<br>
+                             Professor de Karate</h3>
+                            <img src="img/prof karate.jpg" width="250" height="250">
+                        </div>
+
+                        <div id="m">
+                          <h3> Leonardo Brisolara <br>
+                             Grau Preto de Muay Thai!</h3>
+                                <img src="img/profm.jpg" width="250" height="250">
+                            </div>
+
+                            <div id="k">
+                              <h3>RICARDO MARTINS<br>
+                             Professor de Jiu-Jitsu </h3>
+                                    <img src="img/prof jiu.jpg" width="250" height="250">
+                                </div>
+                                <div id="m">  
+                                  <h3>José Aldo<br>
+                                  Professor de Boxe</h3>                                
+                                        <img src="img/profb.jpeg" width="250" height="250">
+                                            </div>                                            
+                                        </div> 
+                                        <div id="encontre">
+                                          <hr size="10"  color="#FF4500">
+                                          <h1>Encontre-Nos Aqui</h1>
+                                          <hr size="10"  color="#FF4500">
+                                        </div>			                      
+					    <div id="hj">                
+                                              
+                    <div id="ft">
+                      <img src="img/panfleto.jpg" widht="50" height="600"> 
+                            <img src="img/folder.png" widht="50" height="600">              
+                            
+                    </div> 
+                    <div id="mapa">
+                    <h2> <p>Cangu's Fight</br>
+                      47 408 - R. Evaristo da Veiga - Centro, Rio de Janeiro - RJ,</br>
+                       20031-040 CEP: 20031-040  - Tel: 21 96728-6308</p></h2>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.062527703452!2d-43.17998078540036!3d-22.911064443782834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f6162b952dd%3A0xd6994bdf3ba202b5!2sR.+Evaristo+da+Veiga%2C+47+-+Centro%2C+Rio+de+Janeiro+-+RJ%2C+20031-040!5e0!3m2!1spt-BR!2sbr!4v1561578970793!5m2!1spt-BR!2sbr"
+                        width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>       
+                      </div>                             
+                </div>
+                   <div id="rodape1" >  
+                      <div id="redes1">
+                        <Div id="face1">
+                         <a class="link-rd" href="https://web.facebook.com/CangusFight ">
+                            <img src="img/face.png"width="20" height="20" > Facebook  </br>
+                            </a>
+                         </Div>
+                         <div id="insta1">
+                            <A class="link-rd" href= "https://www.instagram.com/cangusfight/">
+                            <img src="img/insta.png"width="20" height="20">Instagram <br>
+                            </A>
+                         </div>
+                         <Div id="twt1">
+                            <A class="link-rd" href= "https://twitter.com">
+                            <img src="img/twt.png" width="20" height="20"> Twitter  <br>
+                            </A>
+                         </Div>
+                        <div id="gmail1">
+                            <A class="link" href= "https://mail.google.com/mail/u/7/#inbox">
+                             <img src="img/gmail.png" width="20" height="20"> Gmail  <br>
+                             </A>
+                         </div> 
+                         <div id="wats1">
+                           <a class="link-rd" href= "https://api.whatsapp.com/send?phone=5521967286308&text=Entre%20em%20contato">
+                            <img src="img/wats.png" width="20" height="20">Whatsapp <br>
+                            </a> 
+                         </div>
+                     </Div>              
+                                                                                          
+                                 <a class="link" href="Aliados.html ">
+                                
+                            <div id="img1"></br>
+                              <img src="img/LOGOTIPO.png" width="70" height="70" >  </div> 
+                                 </br></br></br>
+                              <div id="txt"><h2> @Copyright Feito Por Aliados Da T.I 2019 </h2></div> </a>
+                         </div>  
+                  </div>            
+            </body>    
+</html>
